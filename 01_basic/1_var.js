@@ -21,3 +21,12 @@ let Score1 = Number(score);
 
 console.log(Score1);
 console.log(typeof(Score1));
+
+console.log(null>0);
+console.log(null==0);
+console.log(null>=0);
+console.log("2" == 2);
+// try to ignore above comparison
+
+
+console.log("2" === 2);
