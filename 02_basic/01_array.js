@@ -43,3 +43,24 @@ const mna2 = myArr.splice(1,2)
  console.log(mna2);
  console.log(myArr);
 // important: main diffrence btw slice and splice is --> SPLICE manipulates original array
+ 
+const dc_Heros = ["SuperMan","Flash","BatMan"];
+const marvel_Heros = ["SpiderMan","IronMan","CaptainAmerica"];
+
+const all_Heros = dc_Heros.concat(marvel_Heros);
+// returns a new Array and merge both Arrays in one 
+console.log(all_Heros);
+
+const all_new_heros = [...dc_Heros,...marvel_Heros];
+// same as concat.
+console.log(all_new_heros);
+
+
+console.log(Array.isArray("Meraj"));
+//return false.
+
+console.log(Array.from("Meraj"));
+// ['M','e','r','a','j'] converts into a new  array.
+
+console.log(Array.from({name:"Meraj"}));
+// prints--> [] 
