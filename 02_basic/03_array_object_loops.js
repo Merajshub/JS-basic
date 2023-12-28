@@ -94,5 +94,3 @@ myArr.forEach(function(item){
     console.log(item.fileName);
 })
   
-
-console.log('hello')
