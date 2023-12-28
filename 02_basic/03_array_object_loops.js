@@ -74,23 +74,73 @@
 
 //ARRAYS OF OBJECTS
 
-const myArr = [
-    {
-        file: 'javaScript',
-        fileName: 'JS'
-    },
-    {
-        file: 'java',
-        fileName: 'JAVA'
-    },
-    {
-        file: 'CPP',
-        fileName: 'C++'
-    }
+// const myArr = [
+//     {
+//         file: 'javaScript',
+//         fileName: 'JS'
+//     },
+//     {
+//         file: 'java',
+//         fileName: 'JAVA'
+//     },
+//     {
+//         file: 'CPP',
+//         fileName: 'C++'
+//     }
 
-]
+// ]
 
-myArr.forEach(function(item){
-    console.log(item.fileName);
-})
+// myArr.forEach(function(item){
+//     console.log(item.fileName);
+// })
+
+// const myNums = [1,2,3,4,5,6]
+
+// myNums.forEach((nums) =>{
+//    return console.log(nums + 10);
+// })
   
+
+// filter 
+
+// const myNums = [1,2,3,4,5,6]
+// let newNums = myNums.filter((num)=> (num >=4))
+// console.log(newNums);
+
+// const myNums = [1,2,3,4,5,6]
+// let newNums = myNums.filter((num)=> {
+//      return num >=4
+// } )
+// console.log(newNums)
+
+// MAP
+
+// const myNums = [1,2,3,4,5,6,7,8,9,10]
+
+// let newNums = myNums.map((num)=>{
+//     return (num+10)
+// })
+// console.log(newNums);
+
+// -------------------->
+
+// const myNums = [1,2,3,4,5,6,7,8,9,10]
+// let newNums = myNums
+// .map((num)=>num*10)
+// .map((num)=>num+1)
+// .filter((num)=>num>40) 
+
+// console.log(newNums);
+
+// REDUCE
+// const myNums = [1,2,3,4,5]
+// const newNums = myNums.reduce(function(acc,item){
+//     return (acc+item)
+// },0)
+// console.log(newNums);
+
+// Using Arrow fun.
+const myNums = [1,2,3,4,5]
+const newNums = myNums.reduce((acc,item)=>(acc+item),0)
+console.log(newNums);
+
