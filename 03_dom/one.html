@@ -5,10 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
-<body>
+<body style="background-color: #212121; color: aliceblue;">
     <ul class="language">
         <li>JavaScript</li>
     </ul>
 </body>
+<script>
+    function addLi(addLan){
+        const Li = document.createElement('li');
+        Li.innerText = `${addLan}`
+        document.querySelector('.language').appendChild(Li)
+    }
+    addLi("JAVA")
+
+// this code is not optimised cuz it'll transverse from  top to bottom.
+
+
+// another way
+function addOptimisedLI(langName){
+    const Li = document.createElement('li');
+    Li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(Li)
+}
+
+addOptimisedLI("Python")
+
+// EDIT 
+const secondLang = document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML = "Mojo"
+
+const newLi = document.createElement('li')
+newLi.textContent = "Mojoo"
+secondLang.replaceWith(newLi)
+
+//Edit
+const firstLan = document.querySelector("li:first-child")
+firstLan.outerHTML = '<li> TypeScript</li>'
+
+// Remove
+const lastLan = document.querySelector("li:last-child")
+lastLan.remove()
+
+
+</script>
 
 </html>
