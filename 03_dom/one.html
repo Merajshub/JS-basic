@@ -9,6 +9,9 @@
     <ul class="language">
         <li>JavaScript</li>
     </ul>
+
+    // for converting lowwerCase to upperCase 
+    Enter your name: <input type="text" id="fname" oninput="upperCase()"> 
 </body>
 <script>
     function addLi(addLan){
@@ -45,6 +48,14 @@ firstLan.outerHTML = '<li> TypeScript</li>'
 // Remove
 const lastLan = document.querySelector("li:last-child")
 lastLan.remove()
+
+
+// for converting lowwerCase to upperCase
+function upperCase(){
+        const x = document.getElementById('fname')
+        x.value = x.value.toUpperCase();
+    } 
+
 
 
 </script>
